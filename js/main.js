@@ -2,6 +2,7 @@ import { User } from './User.js'
 import { AdminUser } from './AdminUser.js'
 
 const adminUsers = new AdminUser()
+
 const u1 = new User(1004807096, 'Jose Waldo', 'JWaldo', '123', 3013130377)
 const u2 = new User(1111111111, 'Carlos Waldo', 'CWaldo', 'sdkk219dmkl12', 3133130313)
 
@@ -33,21 +34,12 @@ const validarUsuario = function(e) {
         formLogin.login__user.focus()
         e.preventDefault()
     }
-    
-    else {
-        alert('hhooh')
+
+    else if(adminUsers.validateUser(nameUser, passwordUser)) {
+        adminUsers.changeUserLogged = nameUser
+        console.log(`El usuario ${nameUser} se loggeo`)
+
     }
-
-    // else {
-    //     userLogged = adminUsers.searchUser(nameUser)
-    //     adminUsers.setUserLogged = userLogged
-    //     //window.location.href = "main.html"
-
-    //     console.log(adminUsers.getUserLogged.getName)
-    //     //alert(adminUsers.getUserLogged.getName)
-    //     e.preventDefault()
-    // }
-
 }
 
 const validar = function(e) {
@@ -55,4 +47,5 @@ const validar = function(e) {
 }
 
 formLogin.addEventListener('submit', validar)
+
 

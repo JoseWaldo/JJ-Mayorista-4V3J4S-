@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Main</title>
 </head>
 <body>
-    <p>Esta será la parte Main de la aplicación.</p>
+    <main class="container__content">
+        <span class="pattern-background"></span>
+        <article class="content__info-user">
+            <section class="info-user__last-acces">
+                <p class="last-acces__title">JJ SOPETRAN</p>
+                <p class="last-acces__info">Último ingreso</p>
+            </section>
+            <section class="info-user__profile">
+                <span class="info-user__photo-profile"></span>
+                <p class="info-user__name-user">Usuario Anonimo</p>
+            </section>
+            <section class="info-user__datatime">
+                <p class="info-user__date">Jul 22, 2022</p>
+                <p class="info-user__time">02:44 pm</p>
+            </section>
+        </article>
+
+        <article>
+            <button type="submit" class="button btn">Reportes</button>
+            <button type="submit" class="button btn">Listado Maestro</button>
+            <button type="submit" class="button btn">Ventas</button>
+            <button type="submit" class="button btn">Compras</button>
+            <button type="submit" class="button btn">Movimientos Cajas y Bancos</button>
+        </article>
+    </main>
 </body>
 </html>

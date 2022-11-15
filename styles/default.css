@@ -1,0 +1,29 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul-oscuro: #4B539D;
+    --azul-encabezados: #020D75;
+    --blanco-texto: #fff;
+    --gris-texto: #6F6F6F;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.button {
+    padding: 17px 87px;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco-texto);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    filter: drop-shadow(1px 4px 10px rgba(0, 0, 0, 0.3));
+}

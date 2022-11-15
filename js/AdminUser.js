@@ -47,8 +47,9 @@ export class AdminUser {
         return this.#users
     }
 
-    set setUserLogged(user) {
-        this.#userLogged = user
+    set changeUserLogged(username) {
+        let userFound = this.searchUser(username)
+        this.#userLogged = userFound
     }
 
 }
