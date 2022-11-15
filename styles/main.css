@@ -65,6 +65,7 @@
 .info-user__datatime {
     font-weight: 400;
     font-size: 12px;
+    line-height: 16px;
     color: #A7A7A7;
     margin-block-start: 10px;
 }
@@ -80,4 +81,10 @@
 
 .btn:nth-child(1) {
     margin-block-start: 50px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }

@@ -50,6 +50,7 @@ export class AdminUser {
     set changeUserLogged(username) {
         let userFound = this.searchUser(username)
         this.#userLogged = userFound
+        console.log(this.#userLogged)
     }
 
 }

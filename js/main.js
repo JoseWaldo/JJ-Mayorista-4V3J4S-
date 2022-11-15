@@ -4,7 +4,7 @@ import { AdminUser } from './AdminUser.js'
 const adminUsers = new AdminUser()
 
 const u1 = new User(1004807096, 'Jose Waldo', 'JWaldo', '123', 3013130377)
-const u2 = new User(1111111111, 'Carlos Waldo', 'CWaldo', 'sdkk219dmkl12', 3133130313)
+const u2 = new User(1111111111, 'Carlos Waldo', 'CWaldo', '123', 3133130313)
 
 adminUsers.addUser(u1)
 adminUsers.addUser(u2)
@@ -35,10 +35,11 @@ const validarUsuario = function(e) {
         e.preventDefault()
     }
 
-    else if(adminUsers.validateUser(nameUser, passwordUser)) {
+    else {
+        location.href = 'main.html'
         adminUsers.changeUserLogged = nameUser
-        console.log(`El usuario ${nameUser} se loggeo`)
-
+        localStorage.setItem("userLogged", `${adminUsers.getUserLogged.getName}`)
+        alert(`El usuario: ${nameUser} se ha logeado.`)
     }
 }
 
@@ -46,6 +47,5 @@ const validar = function(e) {
     validarUsuario(e)
 }
 
+
 formLogin.addEventListener('submit', validar)
-
-
