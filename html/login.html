@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>4V3J4S | Application</title>
+</head>
+<body>
+    <main class="main__container">
+        <span class="pattern pattern--top"></span>
+        <h1 class="main__title">JJ Mayoristas</h1>
+        <form action="" id="form__login" name="form__login" method="get">
+            <label for="login__user">
+                Usuario
+                <input type="text" id="login__user" name="login__user" class="input">
+            </label>
+            <label for="login__password">
+                Contraseña
+                <input type="password" id="login__password" name="login__password" class="input">
+            </label>
+            <input type="submit" id="login__logger" name="login__logger" class="button" value="Ingresar">
+            <a href="#" class="login__register">
+                ¿Aún no tienes cuenta? Registrate
+            </a>
+        </form>
+        <p class="login__error" id="messageError"></p>
+        <span class="pattern pattern--bottom"></span>
+    </main>
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
