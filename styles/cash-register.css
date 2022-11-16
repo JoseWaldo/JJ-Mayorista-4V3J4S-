@@ -1,0 +1,117 @@
+@import url(../styles/default.css);
+
+.container__cash-register {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-sales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    margin-block-end: 40px;
+    width: 200px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    background-color: #4B539D;   
+    border-radius: 40px;
+    cursor: pointer; 
+    filter: drop-shadow(1px 4px 5px rgba(0, 0, 0, 0.3));
+}
+
+.button-sales__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../assets/icons/icon-acces.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cash-register__title {
+    margin-block-end: 40px;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--azul-encabezados);
+}
+
+.cash-register__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cash-register__form section {
+    position: relative;
+}
+
+.cash-register__input {
+    margin-block-end: 20px;
+    padding: 10px 0;
+    width: 240px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 15px;
+    color: #6f6f6f;
+    border: none;
+    border-bottom: 2px solid #4a4a4a;
+    outline: none;
+}
+
+.cash-register__cant-price {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.cash-register__cant-price input {
+    width: 110px;
+}
+
+.button--register {
+    margin-block-start: 20px;
+}
+
+.icon {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 6px
+}
+
+.icon--lens {
+    background-image: url(../assets/icons/icon-lupa.svg);
+    background-repeat: no-repeat;
+}
+
+.icon--imei {
+    background-image: url(../assets/icons/icon-imei.svg);
+}
+
+#messageError {
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(190, 62, 62);
+    line-height: 15px;
+}
+
+.pattern {
+    position: absolute;
+    display:inline-block;
+    width: 100%;
+    height: 180px;
+    z-index: -1;
+    bottom: 0;
+    background-image: url(../assets/images/pattern-2.svg);
+    background-repeat: no-repeat;
+}

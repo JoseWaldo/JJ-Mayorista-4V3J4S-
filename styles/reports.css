@@ -1,0 +1,94 @@
+@import url(../styles/default.css);
+
+.container__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--azul-encabezados);
+    margin-block-end: 75px;
+}
+
+.content__links {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 20px
+}
+
+.content__report {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul-oscuro);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--blanco-texto);
+    cursor: pointer;
+}
+
+.content__report:nth-child(1) {
+    border-radius: 15px 15px 0 15px;
+}
+
+.content__report:nth-child(2) {
+    border-radius: 15px 15px 15px 0;
+}
+
+.content__report:nth-child(3) {
+    border-radius: 15px 0 15px 15px;
+}
+
+.content__report:nth-child(4) {
+    border-radius: 0 15px 15px 15px;
+}
+
+.icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    margin-block-end: 12px;
+    filter: drop-shadow(1px 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+.conten__icon-report1 {
+    background-image: url('../assets/icons/icon-reporte-compra.svg');
+}
+
+.conten__icon-report2 {
+    width: 52px;
+    height: 52px;
+    background-image: url('../assets/icons/icon-reporte-venta.svg');
+}
+
+.conten__icon-report3 {
+    width: 55px;
+    height: 55px;
+    background-image: url('../assets/icons/icon-reporte-inventario.svg');
+}
+
+.conten__icon-report4 {
+    background-image: url('../assets/icons/icon-reporte-gerenciales.svg');
+}
+
+.pattern {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 240px;
+    bottom: -40px;
+    left: 0;
+    background-image: url('../assets/images/pattern-2.svg');
+    background-repeat: no-repeat;
+}

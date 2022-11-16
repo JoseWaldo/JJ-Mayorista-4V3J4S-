@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/avejas.svg"/>
+    <link rel="stylesheet" href="../styles/cash-register.css">
+    <title>Registros de Ventas | JJ Mayoristas</title>
+</head>
+<body>
+    <main class="container__cash-register">
+        <a href="./sales-report.html" class="button-sales">
+            <i class="button-sales__icon"></i>
+            <span class="button-sales__title">Registro de Ventas</span>
+        </a>
+        <h1 class="cash-register__title">Facturación</h1>
+        <form action="" method="get" class="cash-register__form">
+            <input type="number" placeholder="ID Venta" class="cash-register__input" id="idSale">
+            <section>
+                <input type="text" placeholder="Cliente" class="cash-register__input" id="client">
+                <i class="icon icon--lens"></i>
+            </section>
+            <section>
+                <input type="text" placeholder="Producto" class="cash-register__input" id="product">
+                <i class="icon icon--lens"></i>
+            </section>
+            <section>
+                <input type="number" placeholder="IMEI" class="cash-register__input" id="imei">
+                <i class="icon icon--imei"></i>
+            </section>
+            <section class="cash-register__cant-price">
+                <input type="number" placeholder="Cantidad" class="cash-register__input" id="cant">
+                <input type="number" placeholder="Precio Unitario" class="cash-register__input" id="unitaryPrice"> 
+            </section>
+            <section>
+                <input type="text" placeholder="Observación" class="cash-register__input" id="observ">
+                <i class="icon icon-observ"></i>
+            </section>
+            <p id="messageError"></p>
+            <button type="submit" class="button button--register">Guardar</button>
+        </form>
+        <span class="pattern"></span>
+    </main>
+
+    <script src="../js/cashRegister.js"></script>
+</body>
+</html>

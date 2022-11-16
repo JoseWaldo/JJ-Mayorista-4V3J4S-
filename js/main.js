@@ -18,28 +18,28 @@ const validarUsuario = function(e) {
     let passwordUser = formLogin.login__password.value
 
     if(nameUser === '') {
+        e.preventDefault()
         messageLoginError.textContent = 'Por favor, rellenar el campo Usuario'
         formLogin.login__user.focus()
-        e.preventDefault()
     }
     
     else if(passwordUser === '') {
+        e.preventDefault()
         messageLoginError.textContent = 'Por favor, rellenar el campo Contraseña'
         formLogin.login__password.focus()
-        e.preventDefault()
     }
     
     else if(!adminUsers.validateUser(nameUser, passwordUser)) {
+        e.preventDefault()
         messageLoginError.textContent = 'Usuario y/o contraseña incorrecta'
         formLogin.login__user.focus()
-        e.preventDefault()
     }
 
     else {
+        e.preventDefault()
         location.href = 'main.html'
         adminUsers.changeUserLogged = nameUser
         localStorage.setItem("userLogged", `${adminUsers.getUserLogged.getName}`)
-        alert(`El usuario: ${nameUser} se ha logeado.`)
     }
 }
 
